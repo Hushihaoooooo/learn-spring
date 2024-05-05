@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="fromUser" class="se.zust.edu.cn.bean.User">
+        <property name="id" value="1" />
+        <property name="name" value="ShiHaoHu" />
+        <property name="wx" value="wuaoao" />
+        <property name="mobile" value="123456" />
+        <property name="email" value="wuaoao@qq.com" />
+    </bean>
+
+    <bean id="toUser" class="se.zust.edu.cn.bean.User">
+        <property name="id" value="2" />
+        <property name="name" value="handsome guy" />
+        <property name="wx" value="aowuwu" />
+        <property name="mobile" value="78910" />
+        <property name="email" value="aowuwu@qq.com" />
+    </bean>
+
+    <bean id="message" class="se.zust.edu.cn.bean.Message">
+        <property name="content" value="duduwuwula" />
+        <property name="from" ref="fromUser" />
+        <property name="to" ref="toUser" />
+        <property name="id" value="12" />
+        <property name="topic" value="topicccc" />
+    </bean>
+
+    <bean id="wechatService" class="se.zust.edu.cn.service.impl.WeChatMessageImpl">
+        <constructor-arg index="0" value="wxkey" />
+        <constructor-arg index="1" value="wxsecret" />
+    </bean>
+
+    <bean id="smsService" class="se.zust.edu.cn.service.impl.SMSMessageServiceImpl">
+        <constructor-arg index="0" value="signname" />
+        <constructor-arg index="1" value="templatecode" />
+        <constructor-arg index="2" value="templateparams" />
+    </bean>
+
+    <bean id="emailService" class="se.zust.edu.cn.service.impl.EmailMessageServiceImpl">
+        <constructor-arg index="0" value="smtp" />
+        <constructor-arg index="1" value="username" />
+        <constructor-arg index="2" value="pwt" />
+    </bean>
+
+</beans>
