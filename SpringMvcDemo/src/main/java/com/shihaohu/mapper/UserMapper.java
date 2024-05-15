@@ -1,7 +1,10 @@
-package com.shihaohu.mapper;/**
+package com.shihaohu.mapper;
+
+/**
  * @author ShiHaoHu
- * @date 2024/5/9 19:53 
- * @description 
+ * @date 2024/5/9 19:53
+ * @description
  */
 public class UserMapper {
+
 }

@@ -1,4 +1,4 @@
-package com.shihaohu.config;
+package com.shihaohu.conf;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

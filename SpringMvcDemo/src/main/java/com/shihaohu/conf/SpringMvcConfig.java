@@ -1,4 +1,4 @@
-package com.shihaohu.config;
+package com.shihaohu.conf;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  * @description
  */
 @Configuration
-@ComponentScan("com.shihaohu")
+@ComponentScan("com.shihaohu.controller")
 @EnableWebMvc
 public class SpringMvcConfig {
 

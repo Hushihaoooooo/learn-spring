@@ -1,4 +1,4 @@
-package com.shihaohu.config;
+package com.shihaohu.conf;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
@@ -35,7 +35,7 @@ import javax.servlet.Filter;
 //        return new Filter[] {filter};
 //    }
 //}
-/* 另一种更加简介的写法 */
+/* 另一种更加简洁的写法 */
 public class ServletContainerInitConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
