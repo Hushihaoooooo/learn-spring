@@ -44,7 +44,7 @@ public class ServletContainerInitConfig extends AbstractAnnotationConfigDispatch
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[0];
+        return new Class[]{SpringConfig.class};
     }
 
     @Override
